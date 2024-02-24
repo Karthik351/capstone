@@ -1,0 +1,68 @@
+<!-- myapp/templates/myapp/markets.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markets</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<style>
+    body {
+    background-color: black;
+    }
+    .candlestick-chart-container {
+    background-color: black;
+    }
+</style>
+<body>
+
+    <!-- Add a container for the candlestick chart -->
+    <div class="candle" id="candlestick-chart-container"></div>
+
+    <script>
+        // JavaScript code to generate the candlestick chart
+        console.log('BTC Data:', {{ btc_data|safe }});
+        console.log('ETH Data:', {{ eth_data|safe }});
+        var btc_data = {{ btc_data|safe }};
+        var eth_data = {{ eth_data|safe }};
+
+        function createCandlestickChart(data, name, color) {
+            var candlestick = {
+                x: data.map(entry => entry['Date']),
+                open: data.map(entry => entry['Open']),
+                high: data.map(entry => entry['High']),
+                low: data.map(entry => entry['Low']),
+                close: data.map(entry => entry['Close']),
+                type: 'candlestick',
+                name: name,
+                increasing: {line: {color: color}},
+                decreasing: {line: {color: color}}
+            };
+
+            return candlestick;
+        }
+
+        var layout = {
+            title: 'Candlestick Chart for Bitcoin (BTC) and Ethereum (ETH)',
+            xaxis: {title: 'Date'},
+            yaxis: {title: 'Price'},
+            xaxis_rangeslider_visible: false,
+            template: 'plotly_dark',
+            margin: {l: 50, r: 50, t: 80, b: 50},
+            font: {family: 'Arial', size: 12, color: 'black'},
+            plot_bgcolor: 'rgba(0, 0, 0, 0)',
+            hoverlabel: {bgcolor: 'black', font_size: 12, font_family: 'Arial'},
+            showlegend: true
+        };
+
+        var btc_trace = createCandlestickChart(btc_data, 'Bitcoin (BTC)', 'green');
+        var eth_trace = createCandlestickChart(eth_data, 'Ethereum (ETH)', 'red');
+
+        var data = [btc_trace, eth_trace];
+
+        Plotly.newPlot('candlestick-chart-container', data, layout);
+    </script>
+
+</body>
+</html>
