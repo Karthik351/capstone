@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Poppins:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Uber+Move:wght@100;300;400;500;700&display=swap">
+    <title>Title</title>
+    <style>
+
+        body {
+        margin: 0px;
+        background-attachment: fixed;
+        #background: linear-gradient(to bottom, #3498db, #e74c3c);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        font-family: Uber+Move;
+        }
+        #.bg {
+        background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+        }
+        .toolbar {
+        display: inline-block;
+        margin-left: 650px;
+        vertical-align: bottom;
+        margin-top: 10px;
+
+        }
+
+        .b1-buy-crypto {
+        background-color: transparent;
+        color: black;
+        border: none;
+        font-family: 'Uber Move', sans-serif;
+        font-size: 20px;
+        display: inline-block;
+        margin-right: 10px;
+        font-weight: bold;
+        }
+        .b1-buy-crypto:hover {
+        cursor: pointer;
+        color: #FCD535;
+        transition: 0.3s;
+        }
+        .d1-bc {
+        display: inline-block;
+        }
+        .b2-port {
+        background-color: transparent;
+        color: black;
+        border: none;
+        font-family: 'Uber Move', sans-serif;
+        font-size: 20px;
+        display: inline-block;
+        margin-right: 10px;
+        font-weight: bold;
+        }
+        .b2-port:hover {
+        cursor: pointer;
+        color: #FCD535;
+        transition: 0.3s;
+        }
+        .d2-p, .d3-t, .d4-m, .d5-a, .d6-a {
+        display: inline-block;
+        }
+        .b2-trade, .b3-market, .b4-about, .b5-lo {
+        background-color: transparent;
+        color: black;
+        border: none;
+        font-family: 'Uber Move', sans-serif;
+        font-size: 20px;
+        display: inline-block;
+        margin-right: 10px;
+        font-weight: bold;
+        }
+        .b2-trade:hover, .b3-market:hover, .b4-about:hover, .b5-lo:hover {
+        cursor: pointer;
+        color: #FCD535;
+        transition: 0.3s;
+        }
+        .search {
+        display: inline-block;
+        margin-left: 50px;
+        margin-right: 15px;
+        color: black;
+
+        }
+        .s1, .s2 {
+        padding: 6px;
+        border-radius: 30px;
+        border-width: 1px;
+        border-style: solid;
+        display: inline-block;
+        vertical-align: middle;
+        }
+        .s2:hover {
+        cursor: pointer;
+        }
+        .title {
+        display: inline-block;
+        margin-left: 420px;
+        }
+        .p1 {
+        text-align: center;
+        margin-top: 200px;
+        color: black;
+        font-size: 50px;
+        margin-down: 0px;
+        font-family: 'Uber Move', sans-serif;
+        font-weight: 700;
+        background: linear-gradient(to right, #4d4d4d 0,#FCD535 20%, #fff 14%, #4d4d4d 25%);
+        background-position: 0;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shine 3s infinite forwards;
+        -webkit-text-size-adjust: none;
+        }
+        @-webkit-keyframes shine{
+        0% { background-position: 0; }
+        100% { background-position: 565px; }
+        }
+
+        .p2 {
+        text-align: center;
+        color: black;
+        font-size: 25px;
+        font-family: 'Uber Move', sans-serif;
+        font-weight: 700;
+        }
+
+        .f {
+        color: white;
+        font-family: 'Uber Move', sans-serif;
+        margin-top: 1500px;
+        font-size: 10px;
+        text-align: center;
+        opacity: 0.4;
+        }
+        .f2 {
+        color: black;
+        font-family: 'Uber Move', sans-serif;
+        margin-top: 380px;
+        font-size: 10px;
+        text-align: center;
+        margin-left: 8px
+        }
+        .abt-btc, .abt-eth {
+        background: transparent;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: 'Uber Move', sans-serif;
+        font-weight: 500;
+        color: black;
+        transition: box-shadow 0.3s ease;
+        padding: 8px 10px;
+        border-radius: 30px;
+        border: 2px solid #ddd
+        }
+        .abt-btc:hover, .abt-eth:hover {
+        cursor: pointer;
+        transition: 0.15s;
+        box-shadow: 0 0 20px rgba(252, 213, 53, 0.7);
+        }
+        .abt {
+        display: block;
+        text-align: center;
+        margin-top: 40px;
+        }
+        .line1 {
+        text-align: center;
+        }
+        .whole {
+        display: block;
+        margin-bottom: 0px;
+        margin: 0 auto;
+        max-width: 1500px;
+        }
+        .pic1 {
+        display: inline-block;
+        margin-left: 100px;
+        margin-top: 200px;
+        margin-right: 100px;
+        }
+        .para1 {
+        display: inline-block;
+        margin-down: 50px;
+        margin-left: 50px;
+
+
+        }
+
+
+        .tme1 {
+        width: 600px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+        }
+        .tme {
+        color: black;
+        width: 600px;
+        font-size: 20px;
+        font-family: 'Uber Move', sans-serif;
+        margin-bottom: 100px;
+        line-height: 25px;
+        }
+        .head1 {
+        margin-bottom: 50px;
+        font-size: 30px;
+        #text-shadow: 0 0 2px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5);
+        }
+        .heading1 {
+        color: black;
+        font-family: 'Uber Move', sans-serif;
+        font-weight: 700;
+        }
+        .head1-2 {
+        margin-top: 0px;
+        margin-bottom: 100px;
+        }
+        .d1 {
+        width: 1530px;
+        margin-top: 0px;
+        position: relative;
+        display: inline-block;
+        opacity: 0.6;
+        height: 900px;
+        }
+        .d1-2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: black;
+        font-size: 40px;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 800px;
+        font-family: 'Uber Move', sans-serif;
+        #text-shadow: 0 0 5px #ff8c00, 0 0 20px #ff8c00, 0 0 30px #ff8c00;
+        margin-down: 0px;
+        }
+        .d1-3 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 1200px;
+        width: 900px;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        }
+        .tbwrt {
+        display: block;
+        margin-top: 0px;
+        }
+        #.divider_horizontal {
+        margin-top: 50px;
+        width: 100%;
+        height: 1px;
+        background-color: white;
+        opacity: 0.5;
+        margin: 10px 0;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+{% load static %}
+<body>
+<div class="toolbar">
+    <div class="d1-bc">
+        <button class="b1-buy-crypto">Buy Crypto</button>
+    </div>
+    <div class="d2-p"><a href="{% url 'portfolio' %}"><button class="b2-port">Portfolio</button></a></div>
+    <div class="d3-t"><button class="b2-trade">Trade</button></div>
+    <div class="d4-m"><a href="{% url 'markets' %}"> <button class="b3-market" type="button">Markets</button></a></div>
+
+    <div class="search"><input class="s1" type="search" id="mySearch" placeholder="Search" name="q" autocomplete="off">
+        <button class="s2">&#128269;</button>
+    </div>
+    <div class="d6-a"><form action="{% url 'logout' %}" method="post">
+        {% csrf_token %}
+        <button class="b5-lo" type="submit">Logout</button></form></div>
+</div>
+<div class="title">
+    <div class="line1"><h1 class="p1"> Welcome to omegaXcapital</h1></div>
+    <div class="p11">
+        <h3 class="p2">Buy & Sell Crypto with trust</h3>
+    </div>
+
+<div class="abt">
+    <button class="abt-btc" onclick="window.open('https://en.wikipedia.org/wiki/Bitcoin', '_blank')">Bitcoin</button>
+    <button class="abt-eth" onclick="window.open('https://en.wikipedia.org/wiki/Ethereum', '_blank')">Ethereum</button>
+</div>
+    </div>
+<div class="whole">
+<div class="pic1">
+    <img class="tme1" src="static/Images/trade.jpg">
+</div>
+<div class="para1">
+    <div class="head1">
+    <h1 class="heading1">Trading Made Easy!!</h1></div>
+    <div class="head1-2">
+    <p class="tme">Welcome to our platform where trading becomes a seamless journey. Unlock the world of financial opportunities with our user-friendly interface designed to make trading easy for both beginners and seasoned investors. Whether you're navigating the markets for the first time or looking to enhance your trading strategy, our platform empowers you with intuitive tools and real-time data. Explore a wealth of financial instruments, stay informed with market insights, and execute trades effortlessly. Your path to financial success begins here.</p></div>
+</div>
+</div>
+<div class="tbwrt">
+<p class="d1-2">Trade by analysing real-time data</p>
+    <video autoplay muted  loop class="d1-3" src="static/Images/vecteezy_digital-animation-of-business-stock-market-price-chart_2273297.mp4"></video>
+    </div>
+
+<footer class="f">omegaXcapital &#169; 2024 <span class="f2">All rights reserved.</span> </footer>
+</body>
+
+</html>
