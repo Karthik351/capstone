@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Poppins:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Uber+Move:wght@100;300;400;500;700&display=swap">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+  <style>
+    body {
+    background: linear-gradient(to bottom, #3498db, #e74c3c);
+    }
+    .container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Uber Move', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: gold;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.navigation {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.navigation li {
+  margin-right: 1rem;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #333;
+}
+
+.main {
+  flex: 1; /* Take up remaining space */
+  padding: 1rem 2rem;
+}
+
+.user-details,
+.latest-news {
+  margin-bottom: 2rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.user-details h2,
+.latest-news h2 {
+  margin-bottom: 1rem;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1rem;
+}
+
+.details-grid div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+  </style>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <div class="logo">Portfolio</div>
+    <nav class="navigation">
+      <ul>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="user-details">
+      <h2>User Details</h2>
+      <div class="details-grid">
+        <div>User</div>
+        <div>BTC Investment</div>
+        <div>ETH Investment</div>
+        <div>Total Value</div>
+        <div>Profit</div>
+        <div>Loss</div>
+      </div>
+    </section>
+    <section class="latest-news">
+      <h2>Latest News</h2>
+      </section>
+  </main>
+</div>
+</body>
+</html>
